@@ -11,7 +11,7 @@
 	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-<title>Health Lab - Responsive HTML5 Template</title>
+<title>eHealthBook</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -36,7 +36,7 @@
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd"
 	data-offset="98">
-
+	<%--String loginId = (String)session.getAttribute("uname"); --%>
 	<div class="main-top">
 		<div class="container">
 			<div class="row">
@@ -59,7 +59,7 @@
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
 			<div class="container">
-				<a class="navbar-brand" href="index.html"><img
+				<a class="navbar-brand" href="/index"><img
 					src="images/logo6.png" height="60px" alt="image"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbar-wd" aria-controls="navbar-wd"
@@ -72,10 +72,27 @@
 						<li><a class="nav-link active" href="#home">Home</a></li>
 						<li><a class="nav-link" href="#about">About Us</a></li>
 						<li><a class="nav-link" href="#gallery">Gallery</a></li>
-						<li><a class="nav-link" href="/login">Login</a></li>
-						<li><a class="nav-link" href="/signup">Sign up</a></li>
 						
-
+						
+						<div class="dropdown btn-group">
+                             <a class="nav-link" data-toggle="dropdown" href="#"> LOGIN <span class="caret"></span> </a>
+                             <ul class="dropdown-menu">
+                                <li><a href="/patient_login">PATIENT</a></li>
+                                <li><a href="/doctor_login">DOCTOR</a></li>
+                             </ul>
+                         </div>
+                         
+                         
+                         <div class="dropdown btn-group">
+                             <a class="nav-link" data-toggle="dropdown" href="#"> SIGN UP <span class="caret"></span> </a>
+                             <ul class="dropdown-menu">
+                                <li><a href="/patient_signup">PATIENT</a></li>
+                                <li><a href="/doctor_signup">DOCTOR</a></li>
+                             </ul>
+                         </div>
+                         
+						
+						
 					</ul>
 				</div>
 			</div>
